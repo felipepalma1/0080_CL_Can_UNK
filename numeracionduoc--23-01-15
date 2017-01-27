@@ -1,0 +1,55 @@
+-- MySQL dump 10.14  Distrib 5.5.37-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: numeracionduoc
+-- ------------------------------------------------------
+-- Server version	5.5.37-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `colaborador`
+--
+
+DROP TABLE IF EXISTS `colaborador`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `colaborador` (
+  `anexo` int(4) NOT NULL,
+  `nombre_1` varchar(70) DEFAULT NULL,
+  `apellido_1` varchar(70) DEFAULT NULL,
+  `departamento` varchar(70) NOT NULL,
+  `cargo` varchar(255) DEFAULT NULL,
+  `usuario` varchar(70) DEFAULT NULL,
+  PRIMARY KEY (`anexo`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `colaborador`
+--
+
+LOCK TABLES `colaborador` WRITE;
+/*!40000 ALTER TABLE `colaborador` DISABLE KEYS */;
+INSERT INTO `colaborador` VALUES (0,'dae','','Direccion','','@duoc.cl'),(3300,'Romina','Vilches','Recepcion de Coordinadores','Secretaria Recepcion','rvilches@duoc.cl'),(3307,'Daniela','Fredes','DARA','Operador DARA Vespertino','dfredes@duoc.cl'),(3310,'Gloria','Arenas','Direccion','Secretaria Direccion','garenas@duoc.cl'),(3311,'Pedro','Troncoso','Direccion','Director de Sede','ptroncoso@duoc.cl'),(3312,'Adrian','Jadue','Direccion','Sub Director Academico','ajadue@duoc.cl'),(3313,'Eduardo','Acuna','Direccion','Sub Director Administrativo','eacuna@duoc.cl'),(3314,'Katia','Weisser','Direccion','Sub Director Marketing','kweisser@duoc.cl'),(3315,'Maria Maia','Astorga','Direccion','Encargado de Personas','mastorgac@duoc.cl'),(3316,'Cristian','Henriquez','Departamento Administrativo','Jefe Administrativo','chenriquez@duoc.cl'),(3317,'Alvaro','Moreno','Recepcion de Coordinadores','Coordinador de Proyecto','amorenog@duoc.cl'),(3318,'','','Recepcion','','@duoc.cl'),(3319,'','','Escuela de Construccion','','@duoc.cl'),(3320,'Camila','Tapia','Direccion','Secretaria Recepcion','ctapia@duoc.cl'),(3321,'Monica','Guajardo','Escuela de Salud','Director de Salud','mguajardot@duoc.cl'),(3322,'Maria Jose','Cubillos','Escuela de Ingenieria','Coordinador de Ingenieria Diurno','mcubillos@duoc.cl'),(3323,'Katherine','Cardenas','Departamento Administrativo','Encargado Adquisiciones','kcardenas@duoc.cl'),(3324,'','','Escuela de Salud','','@duoc.cl'),(3325,'Cristian','Garcia','Direccion de Escuelas','Docente de Informatica','cgarcia@duoc.cl'),(3326,'Melissa','Zaldivia','Escuela de Salud','Coordinador de Salud','mzaldivia@duoc.cl'),(3328,'','','Escuela de Salud','Laboratorio Banco de Sangre','@duoc.cl'),(3329,'Sala de Control','','Servicios Generales','','@duoc.cl'),(3330,'Scarlet','Espinoza','Marketing','Coordinador de Extension','sespinozaf@duoc.cl'),(3331,'Maria Paz','Godoy','Marketing','Coordinador Difusion','mgodoyc@duoc.cl'),(3332,'Luis','Vergara','Marketing','Disenador','luvergara@duoc.cl'),(3333,'Jessica','Salazar','DAE','Asistente Punto Estudiantil','jsalazars@duoc.cl'),(3334,'Alexis','Ortiz','Servicios Generales','Jefe de Servicios Generales','aortiz@duoc.cl'),(3336,'Paulo','Pinilla','DARA','Jefe DARA','ppinilla@duoc.cl'),(3337,'Hilda','Meza','DARA','Operador DARA Diurno','hmeza@duoc.cl'),(3338,'Veronica','Carrasco','Centro Fotocopiado','Encargado Centro Fotocopiado','@duoc.cl'),(3339,'','','DAE','Ayudante DAE','@duoc.cl'),(3340,'Maria Angelica','Munoz','Financiamiento','Asistente Financiamiento y Cobranza','mamunozs@duoc.cl'),(3341,'Alexandra','Rubilar','DAE','Coordinador DAE Verspertino','arubilar@duoc.cl'),(3342,'Leila','Croff','DAE','Encargada Financiamiento y Cobranza','lcroff@duoc.cl'),(3343,'Carlos ','Chamorro','DAE','Coordinador Deporte','cchamorro@duoc.cl'),(3344,'Karina','Perez','DAE','Coordinadora Pastoral','kperez@duoc.cl'),(3345,'Victor','Mella','CETECOM','Jefe CETECOM','vimella@duoc.cl'),(3346,'Francisco','Labra','CETECOM','Operador CETECOM','flabra@duoc.cl'),(3347,'Felipe','Palma','CETECOM','Operador CETECOM','fpalmac@duoc.cl'),(3348,'Patricio','Barria','DAE','Capellan','pbarria@duoc.cl'),(3349,'','','Marketing','','@duoc.cl'),(3350,'','','Caja','Cajeros','@duoc.cl'),(3351,'','','Escuela de Salud','','@duoc.cl'),(3352,'Barbara','Farias','Departamento Administrativo','Asistente Contable','bfarias@duoc.cl'),(3353,'Claudia','Reyes','Coordinacion Docente','Asistente Coordinacion Docente','creyes@duoc.cl'),(3354,'Jonathan','Donoso','Coordinacion Docente','Coordinador Docente','jdonoso@duoc.cl'),(3355,'','','Biblioteca','','@duoc.cl'),(3356,'Bernardo','Rojas','Biblioteca','Jefe Biblioteca','brojas@duoc.cl'),(3357,'Jesus','Unanue','Direccion','Coordinador de Matematicas','junanue@duoc.cl'),(3358,'Jose Luis','Donoso','Recepcion de Coordinadores','Coordinador General Academico Diurno','jdonosoe@duoc.cl'),(3359,'Sandra','Esnaola','Recepcion de Coordinadores','Coordinador Programa Lenguaje','sesnaola@duoc.cl'),(3360,'','','Escuela de RRNN','','@duoc.cl'),(3361,'','','Escuela de Construccion','','@duoc.cl'),(3362,'Gonzalo','Salinas','Escuela de Construccion','Coordinador de Construccion','gsalinasm@duoc.cl'),(3363,'','','Escuela de Construccion','Panol de Construccion','@duoc.cl'),(3365,'Jose','Duarte','Escuela de Ingenieria','Director de Ingenierias','jduartes@duoc.cl'),(3366,'Salomon','Fredes','Escuela de Ingenieria','Coordinador de Ingenieria','sfredes@duoc.cl'),(3367,'Paula ','Vega','Biblioteca','Bibliotecaria Referencista','pvega@duoc.cl'),(3368,'','','DAE','Ayudante DAE 2','@duoc.cl'),(3369,'','','Escuela de Ingenieria','Panolero de Mecanica','@duoc.cl'),(3370,'Patricia','Hofflinger','Direccion de Escuelas','Director Administracion y Negocios','phofflinger@duoc.cl'),(3371,'Miguel ','Maulme','Escuela de Ingenieria','Panol de Ingenieria','mmaulme@duoc.cl'),(3372,'Susana','Munoz','Biblioteca','Asistente Biblioteca Diurno','smunozs@duoc.cl'),(3373,'Constanza','Cabeza','Direccion de Escuelas','Secretaria de Carreras','ccabeza@duoc.cl'),(3374,'Patricia','Vargas','Recepcion de Coordinadores','Coordinador Programa Etica','pvargasc@duoc.cl'),(3375,'Marjorie','Moreno','Direccion de Escuelas','Coordinador Informatica y Tlc.','mmoreno@duoc.cl'),(3376,'Luis Felipe','Maulen','Direccion de Escuelas','Coordinador de RRNN Diurno','lmaulen@duoc.cl'),(3377,'Sebastian','Sepulveda','CITT','Panolero de Informatica','ssepulveda@duoc.cl'),(3378,'Dasni','Munoz','Direccion de Escuelas','Coordinador Administracion y Negocios','dmunozq@duoc.cl'),(3379,'Jaime','Meza','Direccion de Escuelas','Director Recursos Naturales','jmezap@duoc.cl'),(3380,'Claudio','Alcota','Direccion de Escuelas','Director Informatica y Telecomunicaciones','calcota@duoc.cl'),(3381,'','','Primeros Auxilios','','@duoc.cl'),(3382,'Patricio','Gonzalez','Escuela de Construccion','Director Escuela Construccion','pagonzalezc@duoc.cl'),(3383,'Ruth','Castro','Escuela de Salud','Panol de Salud','rcastrom@duoc.cl'),(3387,'Pablo','Rodriguez','Servicios Generales','Coordinador de SSGG Vespertino','parodriguez@duoc.cl'),(3388,'Administracion','Casino','Casino','','@duoc.cl'),(3389,'Veronica','Salazar','Direccion de Escuelas','Coordinador Administracion y Negocios','vsalazar@duoc.cl'),(3390,'Patricio','Drago','Marketing','Jefe de Comunicaciones','pdrago@duoc.cl'),(3391,'Carlos ','Perez','Departamento Administrativo','Contador','cperez@duoc.cl'),(3392,'Yasna','Rubio','UAP','Jefe UAP','yrubio@duoc.cl'),(3393,'Claudio','Adasme','Recepcion de Coordinadores','Coordinador General Academico Vespertino','cadasme@duoc.cl'),(3394,'Ximena','Gonzalez','Recepcion de Coordinadores','Coordinador Programa Ingles','xgonzalez@duoc.cl');
+/*!40000 ALTER TABLE `colaborador` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-01-23 17:02:32

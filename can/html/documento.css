@@ -1,0 +1,86 @@
+
+
+#divTabla
+{
+margin-top:255px;
+margin-left:452px;
+position:static;
+
+}
+
+#nombre_1{}
+#nombre_2{}
+#apellido_1{}
+#apellido_2{}
+#usuario{}
+#departamento{}
+#anexo{}
+
+
+
+
+
+#table
+{
+width:15%;
+padding:2%;
+margin-left:40%;
+
+}
+
+
+div label
+{
+  width: 160px;
+  float: left;
+}
+
+#colordato
+{
+ background-color:aquamarine;
+}
+
+#datos
+{
+ width:45%;
+ border-style:solid;
+ margin-left:25%;
+ font-size:x-large;
+ padding:1%;
+
+}
+
+#interno
+{
+padding:1%;
+}
+
+input[type=text],select
+{
+	background-color: rgba(62,107,153,0.5);
+	/*color de texto*/
+	color: rgba(1,2,5,1);
+	font: normal 20px/normal "Antic", Helvetica, sans-serif;
+	font-size: 18px;
+	/*text-shadow:15px 1px 0px #000000;*/
+	font-weight: lighter;
+	/*color de borde*/
+	border:1px solid rgba(2,2,2,0.5);
+	box-shadow: 0px 1px 4px -1px #FFF inset;
+	padding-left: 20px;
+	border-radius: 12px;
+}
+
+input[type=submit]
+{
+        
+        padding: 10px;
+        border-radius: 12px;
+	background-color: rgba(0, 106, 244, 0.7);
+	background: rgba(0, 106, 244, 0.7);
+	color: rgba(255, 255, 244, 1);
+	border-style:dotted;
+
+}
+
+
